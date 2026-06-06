@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <h1>hi karim</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quisquam
+      nihil ullam quibusdam soluta mollitia velit recusandae praesentium amet,
+      nulla accusamus sed omnis, nisi aliquam libero quasi unde. Deserunt,
+      aspernatur.
+    </p>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-adservice-banners/169a672c134a4e7462e9901bd2e1745d37995c2a_1778331559.jpg?x-oss-process=image/quality,q_95/format,webp"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-adservice-banners/5c788d8f55f808a0b914e6c573aacad081fdd374_1780329159.jpg?x-oss-process=image/quality,q_95/format,webp"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
