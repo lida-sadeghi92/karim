@@ -64,9 +64,15 @@
     <script src="./swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 7.5,
-        spaceBetween: 10,
+        slidesPerView: 2.5,
+        spaceBetween: 5,
         freeMode: true,
+        breakpoints: {
+          576: {
+            slidesPerView: 7.5,
+            spaceBetween: 10,
+          },
+        },
       });
     </script>
   </body>
